@@ -1,0 +1,1110 @@
+// font-family: 'Inter', sans-serif;        font-family: 'Red Hat Text', sans-serif;
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Red Hat Text', sans-serif;
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
+    transition: transform .5s ease-in-out;
+    transform: translateX(100%);
+    // text-decoration: none;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 8em;
+
+        a {
+            color: black;
+            padding: .7em 2em;
+            display: block;
+            text-decoration: none;
+
+            &:hover {
+                background: rgb(226, 226, 226);
+            }
+        }
+    }
+    .close {
+        float: right;
+        margin: 2em;
+        width: 2.5em;
+    }
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+svg {
+    width: 50px;
+}
+
+svg {
+    width: 2.3em;
+    margin-top: 0.6em;
+    cursor: pointer;
+}
+
+.hero-img {
+    position: absolute;
+    z-index: -10;
+    background: url(../img/hero-img-grey.png);
+    background-size: cover;
+    background-position-x: 5%;
+    background-position-y: 30%;
+    width: 100%;
+    height: 100vh;
+    animation: introload 2s forwards;
+    overflow: hidden;
+}
+
+body {
+    background-color: #153446;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.logo_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 70px;
+
+    span {
+        color: #F0A637;
+    }
+
+    .menu {
+        width: 25px;
+    }
+}
+
+.hero-div {
+    padding: 25px;
+
+    .hero {
+        font-size: 5.3rem;
+        color: white;
+        letter-spacing: 0.7rem;
+        margin: 0;
+        font-weight: bold;
+        margin-top: 0.5em;
+        line-height: 90px;
+    }
+
+    .subhead {
+        color: white;
+        font-family: 'Red Hat Text', sans-serif;
+        letter-spacing: 0.2rem;
+        font-size: 0.8rem;
+        width: 95%;
+        margin-bottom: 70px;
+    }
+
+    .btn_socialnetworks {
+
+        button {
+            background-color: #F8AE40;
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 5px;
+            border-radius: 56px;
+            font-weight: bold;
+            font-size: 1.1em;
+            letter-spacing: 0.5em;
+        }
+
+        .socialnetworks {
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            width: 75%;
+            margin: auto;
+        }
+    }
+}
+
+.main {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 5em;
+
+    h2 {
+        margin: 0.5em;
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 1.9rem;
+        width: 80%;
+        color: rgb(36, 29, 49);
+    }
+
+    .ticket-info {
+        padding: 10px;
+
+        .b-img {
+            background-image: url(../img/main-img.jpg);
+            width: 100%;
+            background-size: cover;
+            height: 15rem;
+            background-position: center;
+        }
+
+        button {
+            font-family: 'Red Hat Text', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            letter-spacing: 0.5rem;
+            background-color: white;
+            border: none;
+            box-shadow: 0 0 2px 1px rgba(102, 102, 102, 0.671);
+            border-radius: 13px;
+            padding: 5px;
+            margin: 1em 8%;
+            width: 84%;
+
+            &:hover {
+                box-shadow: 0 0 3px 2px rgba(95, 95, 95, 0.479);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .clients-photos {
+        margin-top: 3em;
+
+        h3 {
+            background-color: #F2AD43;
+            font-size: 1.7rem;
+            letter-spacing: 0.5rem;
+            color: #110D2A;
+            padding-left: 1.1em;
+            margin-bottom: 1em;
+        }
+
+        .blue-wrapper {
+            
+            .client-img1 {
+                background-image: url(../img/photo-1588123909244-c79ee855d767.jpg);
+                background-size: cover;
+                width: 80%;
+                height: 23rem;
+                
+            }
+
+            .img-wrapper {
+                display: flex;
+                justify-content: space-around;
+                font-size: 2rem;
+                font-weight: bold;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.rotated {
+    background-color: white;
+    // transform: rotate(-10deg);
+    width: 100%;
+}
+
+.gudes {
+    // transform: rotate(10deg);
+    padding-bottom: 2em;
+
+    h3 {
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 1.9rem;
+        font-weight: 500;
+        letter-spacing: 0.4rem;
+        width: 70%;
+        padding: 1rem 0;
+        color: #110D2A;
+        text-transform: capitalize;
+        margin: 5em auto 0 auto;
+    }
+
+    .gudes-wrapper {
+        
+        img {
+            background-size: cover;
+            width: 96%;
+            margin: 1.5em 2%;
+            box-shadow: 0 3px 7px 3px rgba(94, 94, 94, 0.308);
+        }
+
+        p {
+            font-family: 'Red Hat Text', sans-serif;
+            text-transform: capitalize;
+            font-size: 0.6rem;
+            width: 79%;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            margin: auto;
+        }
+    }
+}
+
+.application {
+    background-color: white;
+    width: 96%;
+    margin: 10em 2%;
+    margin-top: 5em;
+    padding: 2em 0;
+
+    .item {
+
+        h3 {
+            color: #2D6F8A;
+            font-family: 'Red Hat Text', sans-serif;
+            text-transform: capitalize;
+            font-size: 1.4rem;
+            text-align: center;
+            letter-spacing: 0.4rem;
+            margin: 0 0 1rem 0;
+        }
+
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.5rem;
+            letter-spacing: 0.2rem;
+            font-weight: 600;
+            width: 86%;
+            margin: 0 7%;
+        }
+    }
+
+    .input_btn {
+        text-align: center;
+
+        input {
+            display: block;
+            border: none;
+            background-color: #C4C4C4;
+            width: 90%;
+            padding: 8px;
+            margin: 1em 3%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        button {
+            font-family: 'Red Hat Text', sans-serif;
+            background-color: #F8AE40;
+            border-radius: 20px;
+            padding: 5px;
+            width: 90%;
+            border: none;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    .privaty-policy {
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 5%;
+            background-color: #C4C4C4;
+        }
+        p {
+            font-size: 0.8rem;
+            letter-spacing: 0.2rem;
+            font-family: 'Red Hat Text', sans-serif;
+        }
+    }
+}
+
+footer {
+    background-color: #e9e9e9;
+    height: 85vh;
+    padding-top: 3.5em;
+
+    .links {
+        display: grid;
+        grid-template-areas:
+        'link1 link2'
+        'link3 link4';
+        width: 90%;
+        margin: auto;
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 1.2rem;
+ 
+        .link {
+            text-align: center;
+        }
+
+        .link2 {
+            margin-left: 3em;   
+        }
+
+        .link3 {
+            margin-top: 3em;
+        }
+
+        .link4 {
+            margin-top: 3em;
+        }
+
+        span {
+            font-weight: 800;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            line-height: 2rem;
+            letter-spacing: 0.1rem;
+            color: black;
+        }
+    }
+
+    .socNetfork {
+        margin: 2em auto 2em auto;
+        display: flex;
+        align-items: center;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .copiright {
+        text-decoration: none;
+        color: black;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    nav {
+        width: 40%;
+        ul {
+            a {
+                font-size: 1.2rem;
+    
+                &:hover {
+                    background: rgb(226, 226, 226);
+                }
+            }
+        }
+    }
+    
+    .hero-img {
+        width: 100%;
+        height: 100vh;
+        animation: introload 2s forwards;
+        overflow: hidden;
+    }
+
+    .logo_menu {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        margin-bottom: 70px;
+    
+        span {
+            color: #F0A637;
+        }
+    
+        .menu {
+            width: 2rem;
+        }
+    }
+
+    .hero-div {
+        padding: 25px;
+    
+        .hero {
+            font-size: 9rem;
+            width: 80%;
+            letter-spacing: 1.5rem;
+            margin-top: 0.5em;
+            line-height: 130px;
+            margin: auto;
+        }
+    
+        .subhead {
+            letter-spacing: 0.2rem;
+            font-size: 1rem;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 2em;
+        }
+    
+        .btn_socialnetworks {
+    
+            button {
+                width: 50%;
+                padding: 5px;
+                border-radius: 56px;
+                font-size: 1.1em;
+                letter-spacing: 0.5em;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #eba53cd3;
+                }
+            }
+    
+            .socialnetworks {
+                font-size: 1rem;
+                font-weight: 200;
+                width: 75%;
+                margin: auto;
+            }
+        }
+    }
+
+    .main {
+        width: 100%;
+        padding-bottom: 5em;
+    
+        h2 {
+            margin: 0.5em 0;
+            font-size: 3rem;
+        }
+    
+        .ticket-info {
+            padding: 2rem 4rem;
+    
+            .b-img {
+                width: 70%;
+                height: 20rem;
+            }
+    
+            button {
+                padding: 4px;
+                margin: 1em 0;
+                width: 55%;
+            }
+        }
+    
+        .clients-photos {
+            margin-top: 3em;
+    
+            h3 {
+                background-color: #ffcf68;
+                font-size: 1.7rem;
+                letter-spacing: 0.5rem;
+                color: #110D2A;
+                padding: 15px;
+                padding-left: 2.5em;
+            }
+    
+            .blue-wrapper {
+                display: grid;
+                grid-template-areas: 
+                'client-img1 client-img2 client-img3';
+
+                
+
+                .client-img1 {
+                    background-image: url(../img/photo-1588123909244-c79ee855d767.jpg);
+                    background-size: cover;
+                    height: 23rem;
+                    width: 90%;
+                    background-position: center;
+                    
+                }
+
+                .client-img2 {
+                    background-image: url(../img/photo-1582691440518-104cda25be42.jpg);
+                    background-size: cover;
+                    height: 23rem;
+                    width: 90%;
+                    background-position: center;
+                }
+
+                .client-img3 {
+                    background-image: url(../img/photo-1570327888340-c3e3d52e954b.jpg);
+                    background-size: cover;
+                    height: 23rem;
+                    width: 90%;
+                    background-position: center;
+                }
+
+                .dis-none {
+                    display: none;
+                }
+    
+                .img-wrapper {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+
+    .gudes {
+
+        
+        h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 2rem 0 0 0;
+            margin: 5em auto 0 auto;
+            font-weight: bold;
+        }
+    
+        .gudes-wrapper {
+            
+            img {
+                width: 70%;
+                margin: 2em 15%;
+            }
+    
+            p {
+                font-size: 1rem;
+                width: 70%;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .application {
+        width: 70%;
+        margin: 4em auto;
+    }
+
+    footer {
+        background-color: #e9e9e9;
+        height: 80vh;
+        padding-top: 3.5em;
+
+        .links {
+            display: grid;
+            grid-template-areas:
+            'link1 link2'
+            'link3 link4';
+            width: 80%;
+            margin: auto;
+            font-family: 'Red Hat Text', sans-serif;
+            font-size: 1.2rem;
+    
+            .link2 {
+                margin-left: 3em;   
+            }
+
+            .link3 {
+                margin-top: 4em;
+            }
+
+            .link4 {
+                margin-top: 4em;
+            }
+
+            span {
+                font-weight: 800;
+            }
+
+            a {
+                text-decoration: none;
+                display: block;
+                line-height: 2rem;
+                letter-spacing: 0.1rem;
+                color: black;
+            }
+        }
+
+        .socNetfork {
+            margin: 4em auto 2em auto;
+            display: flex;
+            align-items: center;
+            width: 40%;
+            justify-content: space-between;
+        }
+
+        .copiright {
+            text-decoration: none;
+            color: black;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-height: 650px) {
+    footer {
+        height: 90vh;
+
+        .socNetfork {
+            margin: 2em auto 2em auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav {
+        width: 20%;
+        ul {
+            a {
+                font-size: 1.6rem;
+                &:hover {
+                    background: rgb(226, 226, 226);
+                }
+            }
+        }
+        .close {
+        }
+    }
+
+    body {
+        padding-top: 2rem;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-div {
+        background-image: url(../img/hero-img.jpg);
+        width: 80%;
+        background-size: cover;
+        min-height: 70vh;
+        margin: auto;
+        padding: 25px;
+        margin-bottom: 5rem;
+        box-shadow: 0 0 35px 15px #1e1f23de;
+
+        .logo_menu {
+            font-size: 2rem;
+
+            svg {
+                width: 4rem;
+            }
+        }
+
+        .hero {
+            font-size: 6.5rem;
+            letter-spacing: 1.2rem;
+            line-height: 1;
+            font-weight: 600;
+            width: auto;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            width: 80%;
+            margin: 0;
+        }
+
+        .flex-wrapper {
+            display: flex;
+            justify-content: end;
+        }
+
+        .hero-wrapper {
+            width: 40%;
+        }
+
+        .btn_socialnetworks {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4em;
+
+            button {
+                height: 2.5rem;
+                width: 25%;
+                font-size: 1.3rem;
+                background-color: #f8ae40d0;
+            }
+
+            .socialnetworks {
+                width: 30%;
+                font-size: 1.4rem;
+                margin: 0;
+                
+
+                .p {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+    .main {
+        width: 80%;
+        padding-bottom: 5em;
+        margin: auto;
+        box-shadow: 0 0 35px 15px #1e1f2370;
+    
+        .ticket-info {
+            padding: 10px 10px 0 40px;
+            margin-bottom: 3em;
+
+            h2 {
+                margin: 0.5em 0;
+                width: 45%;
+                text-align: start;
+                font-size: 2.7rem;
+                float: right;
+            }
+    
+            .b-img {
+                width: 50%;
+                height: 25rem;
+                margin-top: 2em;
+            }
+    
+            button {
+                padding: 4px;
+                width: 48%;
+                float: right;
+            }
+        }
+    
+        .clients-photos {
+            margin-top: 8em;
+    
+            h3 {
+                background-color: white;
+                font-size: 2rem;
+                text-align: center;
+                padding-left: 0;
+            }
+    
+            .blue-wrapper {
+                display: grid;
+                grid-template-areas: 
+                'client-img1 client-img2 client-img3';
+                background: rgb(156,172,255);
+                background: linear-gradient(0deg, rgba(156,172,255,0.7651435574229692) 15%, rgba(31,112,144,0.5130427170868348) 100%);
+                padding: 1rem 0 ;
+                
+
+                .client-img1 {
+                    background-image: url(../img/photo-1588123909244-c79ee855d767.jpg);
+                    background-size: cover;
+                    width: 90%;
+                    height: 23rem;
+                    background-position: center;
+                    
+                }
+
+                .client-img2 {
+                    background-image: url(../img/photo-1582691440518-104cda25be42.jpg);
+                    background-size: cover;
+                    width: 90%;
+                    height: 23rem;
+                    background-position: center;
+                }
+
+                .dis-none {
+                    display: none;
+                }
+    
+                .img-wrapper {
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .rotated {
+        box-shadow: 0 0 35px 15px #1e1f2370;
+        width: 80%;
+        margin: auto;
+    }
+
+    .gudes {
+        padding-bottom: 4rem;
+        
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+            width: 70%;
+            padding: 3rem 0 2rem 0;
+            margin: 3em auto 0 auto;
+        }
+    
+        .gudes-wrapper {
+            display: flex;
+            
+            img {
+                width: 50%;
+                margin: 2em;
+            }
+    
+            p {
+                font-size: 1rem;
+                width: 50%;
+                font-weight: 500;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .application {
+        background-color: white;
+        width: 80%;
+        display: flex;
+        padding: 2em 1%;
+        margin-left: auto;
+        margin-left: auto;
+        .item {
+            order: 1;
+            width: 49%;
+
+            h3 {
+                color: #2D6F8A;
+                font-family: 'Red Hat Text', sans-serif;
+                text-transform: capitalize;
+                font-size: 1.6rem;
+                text-align: center;
+                letter-spacing: 0.4rem;
+                margin: 0 0 1rem 0;
+            }
+    
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 0.8rem;
+                font-weight: 400;
+                text-align: center;
+                letter-spacing: 0.1rem;
+            }
+        }
+    
+        .input_btn {
+            order: 0;
+            text-align: center;
+            width: 49%;
+            
+            .flex_box {
+                display: flex;
+                align-items: center;
+            }
+
+            input {
+                display: block;
+                border: none;
+                background-color: #C4C4C4;
+                width: 40%;
+                padding: 12px 15px;
+                margin: 1em 3%;
+                letter-spacing: 00.2rem;
+                font-family: 'Inter', sans-serif;
+            }
+    
+            button {
+                width: auto;
+                height: auto;
+                padding: 10px 10px;
+                letter-spacing: 0.15rem;
+                font-size: 0.75rem;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #f3c445;
+                }
+            }
+        }
+    
+        .privaty-policy {
+            display: flex;
+            align-items: center;
+    
+            input {
+                width: 5%;
+                background-color: #C4C4C4;
+            }
+            p {
+                font-size: 0.8rem;
+                letter-spacing: 0.2rem;
+                font-family: 'Red Hat Text', sans-serif;
+            }
+        }
+    }
+
+    footer {
+        background-color: #e9e9e9;
+        height: 75vh;
+        padding-top: 4em;
+
+        .links {
+            display: grid;
+            grid-template-areas:
+            'link1 link2'
+            'link3 link4';
+            width: 80%;
+            margin: auto;
+            line-height: 2rem;
+            font-family: 'Red Hat Text', sans-serif;
+            font-size: 1.5rem;
+            
+            & {
+                letter-spacing: 0.4rem;
+            }
+            .link2 {
+                margin-left: 3em;   
+            }
+
+            .link3 {
+                margin-top: 4em;
+            }
+
+            .link4 {
+                margin-top: 4em;
+            }
+
+            span {
+                font-weight: 800;
+            }
+
+            a {
+                text-decoration: none;
+                display: block;
+                line-height: 2rem;
+                letter-spacing: 0.1rem;
+                color: black;
+            }
+        }
+
+        .socNetfork {
+            margin: 4em auto 2em auto;
+            display: flex;
+            align-items: center;
+            width: 40%;
+            justify-content: space-between;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        .copiright {
+            text-decoration: none;
+            color: black;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+    nav {
+        width: 25%;
+        ul {
+            a {
+                font-size: 1.6rem;
+                &:hover {
+                    background: rgb(226, 226, 226);
+                }
+            }
+        }
+        .close {
+        }
+    }
+
+    .hero-wrapper {
+        
+        .hero {
+            font-size: 8rem;
+        }
+    }
+
+    .main {
+        width: 70%;
+        .ticket-info {
+            .b-img {
+                height: 30rem;
+                width: 45%;
+            }
+        }
+    }
+
+    .rotated {
+        width: 70%;
+    }
+
+    .application {
+        width: 70%;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        margin-top: 7em;
+        margin-bottom: 10em;
+        padding-left: 0;
+        padding-right: 0;
+
+        .input_btn {
+            margin-left: 1em;
+        }
+    }
+
+    .footer {
+        padding-top: 8em;
+        width: 85%; 
+        height: 85vh;
+        margin: auto;  
+    }
+}
+
+@media only screen and (min-width: 1656px) {
+    .hero-div {
+        min-height: 85vh;
+    }
+
+    .hero-wrapper {
+
+        .hero {
+            font-size: 10rem;
+        }
+    }
+
+    .main {
+        .clients-photos {
+            .blue-wrapper {
+                .client-img1 {
+                    height: 30rem;
+                }
+                .client-img2 {
+                    height: 30rem;
+                }
+                .client-img3 {
+                    height: 30rem;
+                }
+            }
+        }
+    }
+
+    .rotated {
+        .gudes {
+            .gudes-wrapper {
+                padding: 2em;
+                align-items: flex-end;
+                img {
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 70%;
+        height: 80vh;
+    }
+}
