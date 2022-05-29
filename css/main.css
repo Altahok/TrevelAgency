@@ -149,6 +149,11 @@ body {
   margin: auto;
 }
 
+.hero-div .btn_socialnetworks .socialnetworks a {
+  text-decoration: none;
+  color: white;
+}
+
 .main {
   background-color: white;
   width: 100%;
@@ -399,11 +404,14 @@ footer .socNetfork {
 }
 
 footer .copiright {
-  text-decoration: none;
   color: black;
   width: 80%;
   text-align: center;
   margin: auto;
+}
+
+footer .copiright a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 680px) {
@@ -638,6 +646,7 @@ footer .copiright {
     display: none;
   }
   .hero-div {
+    animation: moveRight 0.5s alternate-reverse;
     background-image: url(../img/hero-img.jpg);
     width: 80%;
     background-size: cover;
@@ -1026,6 +1035,67 @@ footer .copiright {
   .footer {
     width: 70%;
     height: 80vh;
+  }
+  .fixed_animate {
+    height: 3rem;
+    width: 3rem;
+    background-color: #F2AD43;
+    -webkit-animation: fixedAnimate 3s ease-in-out infinite;
+            animation: fixedAnimate 3s ease-in-out infinite;
+    margin: auto;
+    margin-top: 2em;
+  }
+}
+
+@-webkit-keyframes moveRight {
+  from {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+}
+
+@-webkit-keyframes fixedAnimate {
+  0% {
+    -webkit-clip-path: circle(5% at 50% 50%);
+            clip-path: circle(5% at 50% 50%);
+  }
+  50% {
+    -webkit-clip-path: circle(45% at 50% 50%);
+            clip-path: circle(45% at 50% 50%);
+  }
+  100% {
+    -webkit-clip-path: circle(5% at 50% 50%);
+            clip-path: circle(5% at 50% 50%);
+  }
+}
+
+@keyframes fixedAnimate {
+  0% {
+    -webkit-clip-path: circle(5% at 50% 50%);
+            clip-path: circle(5% at 50% 50%);
+  }
+  50% {
+    -webkit-clip-path: circle(45% at 50% 50%);
+            clip-path: circle(45% at 50% 50%);
+  }
+  100% {
+    -webkit-clip-path: circle(5% at 50% 50%);
+            clip-path: circle(5% at 50% 50%);
   }
 }
 /*# sourceMappingURL=main.css.map */

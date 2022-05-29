@@ -137,6 +137,10 @@ body {
             font-weight: 200;
             width: 75%;
             margin: auto;
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }
@@ -384,11 +388,13 @@ footer {
     }
 
     .copiright {
-        text-decoration: none;
         color: black;
         width: 80%;
         text-align: center;
         margin: auto;
+        a {
+            text-decoration: none;
+        }
     }
 }
 
@@ -661,8 +667,6 @@ footer {
                 }
             }
         }
-        .close {
-        }
     }
 
     body {
@@ -674,6 +678,7 @@ footer {
     }
 
     .hero-div {
+        animation: moveRight 0.5s alternate-reverse ;
         background-image: url(../img/hero-img.jpg);
         width: 80%;
         background-size: cover;
@@ -1016,8 +1021,6 @@ footer {
                 }
             }
         }
-        .close {
-        }
     }
 
     .hero-wrapper {
@@ -1106,5 +1109,36 @@ footer {
     .footer {
         width: 70%;
         height: 80vh;
+    }
+
+    .fixed_animate {
+        height: 3rem;
+        width: 3rem;
+        background-color: #F2AD43;
+        animation: fixedAnimate 3s ease-in-out infinite;
+        margin: auto;
+        margin-top: 2em;
+        
+    }
+}
+
+@keyframes moveRight {
+    from {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+}
+
+@keyframes fixedAnimate {
+    0% {
+        clip-path: circle(5% at 50% 50%);
+    }
+    50% {
+        clip-path: circle(45% at 50% 50%);
+    }
+    100% {
+        clip-path: circle(5% at 50% 50%);
     }
 }
